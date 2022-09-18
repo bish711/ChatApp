@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <b>Room: <span id="room"><%= room %></span></b>
+    <ul class="messages">
+        <li>You have joined the chat as <span id="username"><%= username %></span></li>
+    </ul>
+    <form id="formChat">
+        <input type="text" class="input" autocomplete="off" autofocus>
+        <button>Send</button>
+    </form>
+    <!-- <script type="module">
+        import { io } from "https://cdn.socket.io/4.4.1/socket.io.esm.min.js";
+
+        const socket = io();
+    </script>  -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/script1.js"></script>
+</body>
+</html>
